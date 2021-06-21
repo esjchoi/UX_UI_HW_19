@@ -66,8 +66,37 @@ label{
     flex-direction:column;
     margin-top:30px;
     grid-area:intro;
-    
-    
+       
+}
+/* .typingHeader {
+    display: table;
+    margin: auto;
+}
+.typingHeader h1 {
+    display: table-cell;
+}
+ */
+
+/* .typingAbout{
+margin-right:30px;
+}
+ */
+.typing::after{
+    content:"";
+    position:absolute;
+    width:1px;
+    height:5%;
+    border-right:2px solid black;
+    animation:blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
 }
 .introbox{
     /* display:flex;
@@ -82,8 +111,10 @@ h1{
     font-weight:300;
     font-size:50px;
     letter-spacing: 1px;
+   
 
 }
+
 .introbox2{
     display:grid;
     justify-content:center;
